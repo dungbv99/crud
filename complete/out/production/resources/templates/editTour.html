@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/editTour}" th:object="${tour}" method="post">
+<div>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>price</th>
+            <th>nums of day</th>
+            <th>type of tour</th>
+        </tr>
+        <tr>
+            <td><input type="number" th:field="*{id}"></td>
+            <td><input type="text" th:field="*{name}"></td>
+            <td><input type="number" th:field="*{price}" ></td>
+            <td><input type="number" th:field="*{numsOfDay}" ></td>
+            <td><input type="text" th:field="*{typeOfTour}" ></td>
+        </tr>
+    </table>
+    <input type="submit" value="Edit" >
+</div>
+
+</form>
+</body>
+</html>
