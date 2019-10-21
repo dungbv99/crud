@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <tr>
+            <th>Id</th>
+            <th>name</th>
+            <th>price</th>
+            <th>nums of day</th>
+            <th>type of tour</th>
+        </tr>
+        <tr th:each="tour : ${listTour}">
+
+            <td th:utext="${tour.getId()}">Id</td>
+            <td th:utext="${tour.getName()}">name</td>
+            <td th:utext="${tour.getPrice()}">price</td>
+            <td th:utext="${tour.getNumsOfDay()}">nums of day</td>
+            <td th:utext="${tour.getTypeOfTour()}">type of tour</td>
+        </tr>
+
+    </table>
+    <p><a href="/getIdEditTour"> edit</a> </p><br>
+    <p><a href="/deleteTourId">delete</a> </p>
+    <p><a href="/"> home</a> </p>
+
+</div>
+</body>
+</html>

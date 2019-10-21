@@ -1,0 +1,88 @@
+version: '2'
+services:  
+
+  crud1_1:
+    container_name: hello1_1
+    image: web
+    build: ./1
+    ports:
+      - "8086:8088"
+    expose:
+      - "8088"
+    volumes:
+    - ./crud_cluster/data1_1:/data/db
+
+  crud1_2:
+    container_name: hello1_2
+    image: web
+    build: ./1
+    ports:
+      - "8087:8088"
+    expose:
+      - "8088"
+    volumes:
+    - ./crud_cluster/data1_2:/data/db
+
+
+  crud1_3:
+    container_name: hello1_3
+    image: web
+    build: ./1
+    ports:
+      - "8088:8088"
+    expose:
+      - "8088"
+    volumes:
+    - ./crud_cluster/data1_3:/data/db
+
+  mysql:
+    container_name: mysql-standalone
+    image: mysql
+    ports:
+      - "3307:3307"
+    expose:
+      - "3307"
+    environment:
+      - MYSQL_USER=dung
+      - MYSQL_PASSWORD=123456
+      - MYSQL_DATABASE=db_example
+      - MYSQL_ROOT_PASSWORD=123456
+    volumes:
+      - "./conf.d:/etc/mysql/conf.d:ro"
+
+#  mysql1_2:
+#    container_name: mysql-standalone
+#    image: mysql1_2
+#    ports:
+#      - "3308:3307"
+#    expose:
+#      - "3307"
+#    environment:
+#      - MYSQL_USER=dung
+#      - MYSQL_PASSWORD=123456
+#      - MYSQL_DATABASE=db_example1
+#      - MYSQL_ROOT_PASSWORD=123456
+#    volumes:
+#      - ./crud_cluster/mysql1_2:/data/db
+
+
+
+  haproxy_img:
+    build: ./haproxy
+    ports:
+      - "8089:80"
+      - "80:80"
+    expose:
+      - "80"
+
+
+#networks:
+#  public_net:
+#    driver: bridge
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 8088.0/24
+
+
+
