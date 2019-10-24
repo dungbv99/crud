@@ -6,27 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86f7d8e6-5cef-410d-8fb4-db9b93c20e66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/artifacts/complete_jar/complete.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/addTour.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/deleteTourId.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/editTour.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/getIdEditTour.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/resources/templates/showTour.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../initial/out/artifacts/initial_jar/initial.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../initial/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/accessingdatamysql/AccessingDataMysqlApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/accessingdatamysql/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/accessingdatamysql/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/accessingdatamysql/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../initial/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../initial/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../initial/src/main/java/com/example/accessingdatamysql/AccessingDataMysqlApplication.java" beforeDir="false" />
-    </list>
+    <list default="true" id="86f7d8e6-5cef-410d-8fb4-db9b93c20e66" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +18,31 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="1" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1RxMucXZcVclCKq7BLWe1Z50cKa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/WEB-INF" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,7 +52,22 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\java\META-INF" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\static" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates\login" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates\register" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\WEB-INF" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\java\hello" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -95,8 +102,8 @@
     </configuration>
     <list>
       <item itemvalue="JAR Application.Unnamed" />
-      <item itemvalue="Spring Boot.AccessingDataMysqlApplication" />
       <item itemvalue="JAR Application.complete.jar" />
+      <item itemvalue="Spring Boot.AccessingDataMysqlApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -117,6 +124,12 @@
       <workItem from="1570604524015" duration="67000" />
       <workItem from="1570605938144" duration="7000" />
       <workItem from="1570605981398" duration="2193000" />
+      <workItem from="1571633727227" duration="596000" />
+      <workItem from="1571637913683" duration="12920000" />
+      <workItem from="1571664521703" duration="4245000" />
+      <workItem from="1571814509872" duration="8564000" />
+      <workItem from="1571839383787" duration="7000" />
+      <workItem from="1571884464179" duration="2392000" />
     </task>
     <servers />
   </component>
