@@ -6,9 +6,9 @@ services:
     image: web
     build: ./1
     ports:
-      - "8086:8088"
+      - "8086:8086"
     expose:
-      - "8088"
+      - "8086"
     volumes:
     - ./crud_cluster/data1_1:/data/db
 
@@ -17,9 +17,9 @@ services:
     image: web
     build: ./1
     ports:
-      - "8087:8088"
+      - "8087:8086"
     expose:
-      - "8088"
+      - "8086"
     volumes:
     - ./crud_cluster/data1_2:/data/db
 
@@ -29,9 +29,9 @@ services:
     image: web
     build: ./1
     ports:
-      - "8088:8088"
+      - "8088:8086"
     expose:
-      - "8088"
+      - "8086"
     volumes:
     - ./crud_cluster/data1_3:/data/db
 
