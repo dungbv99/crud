@@ -24,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +42,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/WEB-INF" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,21 +53,29 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.run.dashboard.notification" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\java\META-INF" />
-      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\static" />
       <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates\web" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\static" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\java\META-INF" />
       <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates\login" />
-      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates\register" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hello.shoppingwithspring" />
+      <recent name="hello.shoppingwithspring.web.controller" />
+      <recent name="hello.shoppingwithspring.constraints" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\WEB-INF" />
       <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\templates" />
-      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\java\hello" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\static" />
+      <recent name="C:\Users\ADMIN\Desktop\New folder (3)\crud\5\1\src\main\resources" />
+      <recent name="C:\Users\ADMIN\Desktop\crud\5\1\src\main\resources\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -81,15 +90,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.complete.jar">
+  <component name="RunManager" selected="JAR Application.hello">
     <configuration name="Unnamed" type="JarApplication" nameIsGenerated="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
       <option name="WORKING_DIRECTORY" value="C:\Users\ADMIN\Desktop\gs-accessing-data-mysql\complete" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/hello.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
     <configuration name="complete.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/complete_jar/complete.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hello" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/hello.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ADMIN\Desktop\crud\5\1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
     <configuration name="AccessingDataMysqlApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -100,10 +120,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShoppingWithSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="hello.shoppingwithspring.ShoppingWithSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JAR Application.Unnamed" />
+      <item itemvalue="JAR Application.hello" />
       <item itemvalue="JAR Application.complete.jar" />
       <item itemvalue="Spring Boot.AccessingDataMysqlApplication" />
+      <item itemvalue="Spring Boot.ShoppingWithSpringApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -130,6 +159,16 @@
       <workItem from="1571814509872" duration="8564000" />
       <workItem from="1571839383787" duration="7000" />
       <workItem from="1571884464179" duration="2392000" />
+      <workItem from="1572753083537" duration="3367000" />
+      <workItem from="1572773023873" duration="581000" />
+      <workItem from="1572855122144" duration="1800000" />
+      <workItem from="1572857480218" duration="1498000" />
+      <workItem from="1572859068043" duration="626000" />
+      <workItem from="1572873473739" duration="12485000" />
+      <workItem from="1572917629951" duration="1628000" />
+      <workItem from="1572922515401" duration="5667000" />
+      <workItem from="1572933504565" duration="12013000" />
+      <workItem from="1572961123190" duration="6077000" />
     </task>
     <servers />
   </component>
