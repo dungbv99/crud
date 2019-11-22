@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/admin/addproduct}" method="post" enctype="multipart/form-data">
+    <div th:object="${product}">
+        <table border="1">
+            <tr>
+                <th>Ten</th>
+                <td><input type="text" th:field="*{nameProduct}"></td>
+            </tr>
+            <tr>
+                <th>Gia</th>
+                <td><input type="number" th:field="*{priceProduct}"></td>
+            </tr>
+            <tr>
+                <th>Mieu ta</th>
+                <td><input type="text" th:field="*{describeProduct}"></td>
+            </tr>
+            <tr>
+                <th>So luong trong kho kho</th>
+                <td><input type="number" th:field="*{numberProduct}"></td>
+            </tr>
+
+        </table>
+    </div>
+    <tr>
+        <label>Hinh anh</label>
+        <input type="file" value="choose file" required="required" name="image">
+    </tr>
+
+    <input type="submit" value="add">
+</form>
+
+
+</body>
+</html>

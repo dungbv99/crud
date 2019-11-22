@@ -36,6 +36,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable();
+
+        http.authorizeRequests().antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/user").access("hasAnyRole('ROLE_USER','ROLE_ADMIN')");
+        http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
+
+
         http
                 .authorizeRequests()
                 .antMatchers(
@@ -44,23 +51,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/css/**",
                         "/img/**",
                         "/webjars/**").permitAll()
-                    .anyRequest().authenticated()
-                    .and()
+                .anyRequest().authenticated()
+                .and()
                 .formLogin()
-                    .loginProcessingUrl("/j_spring_security_check")
-                    .loginPage("/login")
-                    .permitAll()
-                    .and()
+                .loginProcessingUrl("/j_spring_security_check")
+                .loginPage("/login")
+                .permitAll()
+                .and()
                 .logout()
-                    .invalidateHttpSession(true)
-                    .clearAuthentication(true)
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                    .logoutSuccessUrl("/login?logout")
-                    .permitAll();
+                .invalidateHttpSession(true)
+                .clearAuthentication(true)
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/login?logout")
+                .permitAll();
 
         http.authorizeRequests().and() //
                 .rememberMe().tokenRepository(this.persistentTokenRepository()) //
-                .tokenValiditySeconds(60*60*7*24); // 24h
+                .tokenValiditySeconds(60); // 24h
+
+
+
     }
 
     @Bean

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Danh sach san pham</h1>
+<div th:each="l : ${list}">
+    <h2 th:utext="${l.getNameProduct()}"></h2>
+
+    <form th:action="@{viewdetail/{id}(id=${l.getId()})}" method="get">
+        <input type="submit" value="xem chi tiet">
+    </form>
+
+</div>
+</body>
+</html>

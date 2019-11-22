@@ -1,5 +1,8 @@
 package hello.shoppingwithspring.model.user;
 
+import hello.shoppingwithspring.model.product.Product;
+import hello.shoppingwithspring.model.product.Product_User;
+
 import javax.persistence.*;
 import java.util.Collection;
 
@@ -9,7 +12,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String firstName;
     private String lastName;
@@ -24,6 +27,11 @@ public class User {
             inverseJoinColumns = @JoinColumn(
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
+
+
+
+
+
 
     public User() {
     }
@@ -43,11 +51,11 @@ public class User {
         this.roles = roles;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
