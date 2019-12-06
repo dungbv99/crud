@@ -20,7 +20,7 @@ CREATE TABLE persistent_logins (
 
 (Bảng duy nhất phải tạo để lưu tooken duy trì đăng nhập các bảng khác sẽ được tự tạo với hibernate)
 
-<<<<<<< HEAD
+
 Bước 3:Mở file bằng intellij ide và  sửa đổi username và password trong application.properties thành username và password trong mysql của bạn
 
 =======
@@ -42,7 +42,7 @@ Sau khi chạy xong project các bảng sẽ được tạo trong database như 
 ![anh2](https://github.com/matdieuhau999/crud/blob/master/5/picture/anh2.png)
 
 Bước 5: vào localhost:8083 bạn sẽ thấy trang web login 
-
+![anh6](https://github.com/matdieuhau999/crud/blob/master/5/picture/anh6.png)
 
 
 Bước 6: kick vào đăng ký để tạo 1 tài khoản
@@ -53,7 +53,12 @@ Sau đó bạn có thể cho người dùng đăng ký với quyền user bằng
 Lúc này người đăng ký sẽ có quyền user nên sẽ không có chức năng thêm là sưa thông tin san phẩm
 Lưu ý  là bạn phải ctrl c dừng chương trình lại và chạy lại chương trình sau khi sửa code nhé!
 
+![anh7](https://github.com/matdieuhau999/crud/blob/master/5/picture/anh5.png)
 
-Còn 1 phần mình thêm làm trên chạy với docker vẫn còn đang lỗi các bạn có thể chạy thử bằng docker-compose nhé, hi vọng ai biết nhiều về docker có thể trao đổi :)))))))))!!!!!
+Ok rồi bây giờ bạn có thể đăng nhập để sài thử web
+Mà có 1 lưu ý nữa là khi admin up ảnh, do ảnh mình chưa up vào file target nên muốn xuất hiện bạn pải dịch lại và chạy lại chương trình như bước 3 :(((
+
+
+Còn 1 phần mình thêm làm trên chạy với docker vẫn còn đang lỗi các bạn có thể chạy thử bằng docker-compose nhé, hi vọng ai biết nhiều về docker có thể liên hệ với mình trao đổi :)))))))))!!!!!
 =======
 
