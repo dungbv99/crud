@@ -8,17 +8,17 @@
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
     <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
 
-    <title>Registration</title>
+    <title>Trang chủ</title>
 </head>
 <body>
 <div class="container">
-hello
-    <p><a href="/user/listproduct">danh sach san pham</a> </p>
-    <p><a href="/logout">log out</a> </p>
+    <br><br><br>
 
-    <p><a href="/user/viewcarts">xem gio hang</a> </p>
-    <p><a href="/admin/edit">thay doi thong tin san pham</a></p>
-    <p><a href="/admin/addproduct">them san pham</a> </p>
+    <a href="/user/listproduct" class ="btn btn-primary" >Danh sách sản phẩm</a> <br> <br>
+    <a href="/user/viewcarts" class ="btn btn-primary">Xem giỏ hàng</a> <br><br>
+    <a href="/admin/edit" class ="btn btn-primary">Thay đổi thông tin sản phẩm</a>  <br><br>
+    <a href="/admin/addproduct" class ="btn btn-primary">Thêm sản phẩm</a> <br><br>
+    <a href="/logout" class ="btn btn-primary">Đăng xuất</a> <br><br>
 </div>
 
 <script type="text/javascript" th:src="@{/webjars/jquery/3.2.1/jquery.min.js/}"></script>

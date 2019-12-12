@@ -218,11 +218,20 @@ public class ProductUseController {
         List<Product> list = new ArrayList<Product>();
         long price = 0;
         for(int i = 0; i < listProduct_users.size(); i++){
+
             integers.add(listProduct_users.get(i).getNumberProduct());
             list.add(productRepository.findById(listProduct_users.get(i).getProduct_id()).get());
             price += list.get(i).getPriceProduct()*listProduct_users.get(i).getNumberProduct();
-        }
 
+
+        }
+        int check = list.size();
+        boolean isCheck = false;
+        if(check != 0) isCheck = true;
+        model.addAttribute("check",check);
+        model.addAttribute("isCheck",isCheck);
+
+        System.out.println("check and isCheck "+ check + isCheck);
         model.addAttribute("is",integers);
         model.addAttribute("list",list);
         model.addAttribute("p",price);
@@ -254,8 +263,9 @@ public class ProductUseController {
             price += list.get(i).getPriceProduct()*listProduct_users.get(i).getNumberProduct();
         }
 
-
-
+        int check = list.size();
+        model.addAttribute("check",check);
+        System.out.println("check  "+check);
         model.addAttribute("is",integers);
         model.addAttribute("list",list);
         model.addAttribute("p",price);

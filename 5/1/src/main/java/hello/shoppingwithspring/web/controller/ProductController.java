@@ -91,10 +91,10 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public String editdetail (Model model,@PathVariable("id") Integer id){
-        Product product_user =new Product();
+        Product product = productRepository.findById(id).get();
         model.addAttribute("id",id);
         a=id;
-        model.addAttribute("product",product_user);
+        model.addAttribute("product",product);
         System.out.println("iddddddddddddddddd" + id);
         return "dung/editdetail";
     }

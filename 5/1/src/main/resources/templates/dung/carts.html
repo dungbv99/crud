@@ -2,21 +2,48 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
 </head>
 <body>
-<div th:each="p,s:${list}">
-    <img th:src="@{/upload/{image}(image = ${p.imagePath})}" width="100px" height="100px">
-    <h3 th:utext="'ten  ' +${p.getNameProduct()}  " ></h3><br>
-    <h3 th:utext="'gia ' + ${p.getPriceProduct()} "></h3><br>
-    <h3 th:utext="'mieu ta ' + ${p.getDescribeProduct()}"></h3><br>
-    <h3 th:utext="'so luon : ' + ${is.get(__${s.index}__)} "></h3><br>
-    <button>
-        <h3><a th:href="@{/user/viewdetail/{id}(id=${p.getId()})}">thay doi so luong san pham</a> </h3>
-    </button>
+<div class="container">
+    <br><br><br>
+    <a href="/home" class ="btn btn-primary">Trang chủ</a>
+    <a href="/user/listproduct" class ="btn btn-primary" >Danh sách sản phẩm</a>
+    <a href="/user/viewcarts" class ="btn btn-primary">Xem giỏ hàng</a>
+    <a href="/logout" class ="btn btn-primary">Đăng xuất</a>
+    <hr>
+    <br>
+    <div th:each="p,s:${list}">
+
+        <img th:src="@{/upload/{image}(image = ${p.imagePath})}" width="200px">
+        <p th:utext="'Sản phẩm:' +${p.getNameProduct()}  " ></p><br>
+        <p th:utext="'Giá:' + ${p.getPriceProduct()} "></p><br>
+        <p th:utext="'Mô tả:' + ${p.getDescribeProduct()}"></p><br>
+        <p th:utext="'Số lượng: ' + ${is.get(__${s.index}__)} "></p><br>
+        <button>
+            <a th:href="@{/user/viewdetail/{id}(id=${p.getId()})}" >Thay đổi số lượng</a>
+        </button>
+        <hr width="30%" align="left">
+
+
+    </div>
+    <div>
+        <div th:if="${isCheck}">
+            <hr  width="30%" align="left" />
+            <h2 th:utext="'Giá tiền : '+${p}"></h2>
+            <h2><a href="/user/delete" >Thanh toán</a> </h2>
+        </div>
+        <div th:unless="${isCheck}">
+            <h2>Giỏ hàng đang trống.</h2>
+        </div>
+
+
+    </div>
+
+
 </div>
 
-<h2 th:utext="'gia tien = '+${p}"></h2>
-<h2><a href="/user/delete"> thanh toan</a> </h2>
 </body>
 </html>

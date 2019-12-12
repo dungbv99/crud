@@ -13,11 +13,11 @@ import java.util.List;
 
 public interface ProductUserRepository extends CrudRepository<Product_User, Integer> {
 
-    @Query("select u from Product_User u where u.user_id = ?1")
+    @Query("select u from Product_User u where u.user_id = ?1 and  u.numberProduct <> 0")
     List<Product_User> findByUser_id(Integer id);
 
     @Modifying
-    @Query("delete from Product_User b where b.user_id=:user_id")
+    @Query("delete from Product_User b where b.user_id=:user_id ")
     void deleteUser(@Param("user_id") Integer user_id);
 
 

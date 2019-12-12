@@ -2,39 +2,48 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Thêm sản phẩm</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
 </head>
 <body>
-<form th:action="@{/admin/addproduct}" method="post" enctype="multipart/form-data">
-    <div th:object="${product}">
-        <table border="1">
-            <tr>
-                <th>Ten</th>
-                <td><input type="text" th:field="*{nameProduct}"></td>
-            </tr>
-            <tr>
-                <th>Gia</th>
-                <td><input type="number" th:field="*{priceProduct}"></td>
-            </tr>
-            <tr>
-                <th>Mieu ta</th>
-                <td><input type="text" th:field="*{describeProduct}"></td>
-            </tr>
-            <tr>
-                <th>So luong trong kho kho</th>
-                <td><input type="number" th:field="*{numberProduct}"></td>
-            </tr>
+<br>
+<div class="container">
+    <br><br><br>
+    <a href="/home" class ="btn btn-primary">Trang chủ</a>
+    <a href="/user/listproduct" class ="btn btn-primary" >Danh sách sản phẩm</a>
+    <a href="/logout" class ="btn btn-primary">Đăng xuất</a>
+    <hr>
+    <br>
+    <form th:action="@{/admin/addproduct}" method="post" enctype="multipart/form-data">
+        <div th:object="${product}">
+            <table border="1">
+                <tr>
+                    <th>Sản phẩm</th>
+                    <td><input type="text" th:field="*{nameProduct}"></td>
+                </tr>
+                <tr>
+                    <th>Giá</th>
+                    <td><input type="number" th:field="*{priceProduct}" min = 0></td>
+                </tr>
+                <tr>
+                    <th>Mô tả</th>
+                    <td><input type="text" th:field="*{describeProduct}"></td>
+                </tr>
+                <tr>
+                    <th>Hiện có</th>
+                    <td><input type="number" th:field="*{numberProduct}" min = 0></td>
+                </tr>
 
-        </table>
-    </div>
-    <tr>
-        <label>Hinh anh</label>
-        <input type="file" value="choose file" required="required" name="image">
-    </tr>
-
-    <input type="submit" value="add">
-</form>
-
-
+            </table>
+        </div>
+        <tr>
+            Hình ảnh
+            <input type="file" value="choose file" required="required" name="image">
+        </tr>
+        <br>
+        <input type="submit" value="Thêm" class="form-control btn btn-info" width="20px">
+    </form>
+</div>
 </body>
 </html>

@@ -2,19 +2,31 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
 </head>
 <body>
-<img th:src="@{/upload/{image}(image = ${p.imagePath})}" width="100px" height="100px">
-<h3 th:utext="'name  ' +${p.getNameProduct()}  " ></h3><br>
-<h3 th:utext="'price ' + ${p.getPriceProduct()} "></h3><br>
-<h3 th:utext="'decribe ' + ${p.getDescribeProduct()}"></h3><br>
-<h3 th:utext="'so luong san pham con trong khoa ' + ${numberProduct}"></h3><br>
+<div class="container">
+    <br><br><br>
+    <a href="/home" class ="btn btn-primary">Trang chủ</a>
+    <a href="/user/listproduct" class ="btn btn-primary" >Danh sách sản phẩm</a>
+    <a href="/user/viewcarts" class ="btn btn-primary">Xem giỏ hàng</a>
+    <a href="/logout" class ="btn btn-primary">Đăng xuất</a>
+    <hr>
+    <br>
+    <img th:src="@{/upload/{image}(image = ${p.imagePath})}" width="200px"> <br>
+    <p th:utext="'Sản phẩm:' +${p.getNameProduct()}  " ></p><br>
+    <p th:utext="'Giá:' + ${p.getPriceProduct()} "></p><br>
+    <p th:utext="'Mô tả:' + ${p.getDescribeProduct()}"></p><br>
+    <p th:utext="'Hiện có:' + ${numberProduct}"></p><br>
 
-<form th:action="@{buyproduct/{id}(id=${p.getId()})}" method="get">
-    <h3>Nhap so san pham can mua</h3>
-    <input type="number" th:value="${num}" id="num" name="num"  >
-    <input type="submit" value="add">
-</form>
+    <form th:action="@{buyproduct/{id}(id=${p.getId()})}" method="get">
+        <p>Cần mua: </p>
+        <input type="number" th:value="${num}" id="num" name="num"  > <br>
+        <input type="submit" value="Thêm">
+    </form>
+</div>
+
 </body>
 </html>
