@@ -59,6 +59,4 @@ Ok rồi bây giờ bạn có thể đăng nhập để sài thử web
 Mà có 1 lưu ý nữa là khi admin up ảnh, do ảnh mình chưa up vào file target nên muốn xuất hiện bạn pải dịch lại và chạy lại chương trình như bước 3 :(((
 
 
-Còn 1 phần mình thêm làm trên chạy với docker vẫn còn đang lỗi các bạn có thể chạy thử bằng docker-compose nhé, hi vọng ai biết nhiều về docker có thể liên hệ với mình trao đổi :)))))))))!!!!!
-=======
 
