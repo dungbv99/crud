@@ -1,4 +1,4 @@
-#SHOPPING ONLINE
+<h1>SHOPPING ONLINE</h1>
 
 
 Hướng dẫn chạy project
@@ -55,7 +55,6 @@ Lưu ý  là bạn phải ctrl c dừng chương trình lại và chạy lại c
 ![anh7](./picture/anh5.png)
 
 Ok rồi bây giờ bạn có thể đăng nhập để sài thử web
-Mà có 1 lưu ý nữa là khi admin up ảnh, do ảnh mình chưa up vào file target nên muốn xuất hiện bạn pải dịch lại và chạy lại chương trình như bước 3 :(((
 
 
 
