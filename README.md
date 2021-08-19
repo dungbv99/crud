@@ -1,5 +1,4 @@
-READ ME
-SHOPPING ONLINE
+#SHOPPING ONLINE
 
 
 Hướng dẫn chạy project
